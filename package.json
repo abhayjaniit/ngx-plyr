@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:app": "ng build --prod && cp dist/ngx-plyr-app/index.html dist/ngx-plyr-app/404.html",
-    "build:lib": "ng build ngx-plyr --prod && cp README.md dist/ngx-plyr && cp LICENSE.md dist/ngx-plyr",
+    "build:app": "ng build --configuration production && cp dist/ngx-plyr-app/index.html dist/ngx-plyr-app/404.html",
+    "build:lib": "ng build ngx-plyr --configuration production && cp README.md dist/ngx-plyr && cp LICENSE.md dist/ngx-plyr",
     "test:app": "ng test ngx-plyr-app",
     "test:app:ci": "ng test ngx-plyr-app --watch=false --progress=false --browsers=ChromeHeadlessCI",
     "test:lib": "ng test ngx-plyr",
@@ -34,11 +34,11 @@
     "plyr": "^3.7.8",
     "rxjs": "^7.8.1",
     "tslib": "^2.0.0",
-    "zone.js": "^0.14.4"
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1102.19",
-    "@angular/cli": "~11.2.19",
+    "@angular-devkit/build-angular": "~12.2.18",
+    "@angular/cli": "~12.2.18",
     "@angular/compiler-cli": "~13.4.0",
     "@angular/language-service": "~13.4.0",
     "@semantic-release/changelog": "^3.0.4",
@@ -54,7 +54,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^11.2.4",
+    "ng-packagr": "^12.2.7",
     "protractor": "~7.0.0",
     "semantic-release": "^15.13.18",
     "ts-node": "~7.0.0",
