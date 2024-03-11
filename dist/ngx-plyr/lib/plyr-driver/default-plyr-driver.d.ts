@@ -5,3 +5,4 @@ export declare class DefaultPlyrDriver implements PlyrDriver {
     updateSource(params: PlyrDriverUpdateSourceParams): void;
     destroy(params: PlyrDriverDestroyParams): void;
 }
+//# sourceMappingURL=default-plyr-driver.d.ts.map

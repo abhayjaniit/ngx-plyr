@@ -16,6 +16,7 @@ class DefaultPlyrDriver {
     }
 }
 
+const _c0 = ["v"];
 class PlyrComponent {
     get player() {
         return this.playerChange.getValue();
@@ -155,113 +156,120 @@ class PlyrComponent {
         this.player.off(name, this.events.get(name));
         this.events.delete(name);
     }
-    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.2.4", ngImport: i0, type: PlyrComponent, deps: [{ token: i0.ElementRef }, { token: i0.NgZone }, { token: i0.Renderer2 }], target: i0.ɵɵFactoryTarget.Component }); }
-    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "17.2.4", type: PlyrComponent, selector: "plyr, [plyr]", inputs: { plyrDriver: "plyrDriver", plyrType: "plyrType", plyrTitle: "plyrTitle", plyrPoster: "plyrPoster", plyrSources: "plyrSources", plyrTracks: "plyrTracks", plyrOptions: "plyrOptions", plyrCrossOrigin: "plyrCrossOrigin", plyrPlaysInline: "plyrPlaysInline" }, outputs: { plyrInit: "plyrInit", plyrProgress: "plyrProgress", plyrPlaying: "plyrPlaying", plyrPlay: "plyrPlay", plyrPause: "plyrPause", plyrTimeUpdate: "plyrTimeUpdate", plyrVolumeChange: "plyrVolumeChange", plyrSeeking: "plyrSeeking", plyrSeeked: "plyrSeeked", plyrRateChange: "plyrRateChange", plyrEnded: "plyrEnded", plyrEnterFullScreen: "plyrEnterFullScreen", plyrExitFullScreen: "plyrExitFullScreen", plyrCaptionsEnabled: "plyrCaptionsEnabled", plyrCaptionsDisabled: "plyrCaptionsDisabled", plyrLanguageChange: "plyrLanguageChange", plyrControlsHidden: "plyrControlsHidden", plyrControlsShown: "plyrControlsShown", plyrReady: "plyrReady", plyrLoadStart: "plyrLoadStart", plyrLoadedData: "plyrLoadedData", plyrLoadedMetadata: "plyrLoadedMetadata", plyrQualityChange: "plyrQualityChange", plyrCanPlay: "plyrCanPlay", plyrCanPlayThrough: "plyrCanPlayThrough", plyrStalled: "plyrStalled", plyrWaiting: "plyrWaiting", plyrEmptied: "plyrEmptied", plyrCueChange: "plyrCueChange", plyrError: "plyrError", plyrStateChange: "plyrStateChange" }, viewQueries: [{ propertyName: "vr", first: true, predicate: ["v"], descendants: true }], exportAs: ["plyr"], usesOnChanges: true, ngImport: i0, template: "", styles: [""] }); }
+    static { this.ɵfac = function PlyrComponent_Factory(t) { return new (t || PlyrComponent)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.NgZone), i0.ɵɵdirectiveInject(i0.Renderer2)); }; }
+    static { this.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: PlyrComponent, selectors: [["plyr"], ["", "plyr", ""]], viewQuery: function PlyrComponent_Query(rf, ctx) { if (rf & 1) {
+            i0.ɵɵviewQuery(_c0, 5);
+        } if (rf & 2) {
+            let _t;
+            i0.ɵɵqueryRefresh(_t = i0.ɵɵloadQuery()) && (ctx.vr = _t.first);
+        } }, inputs: { plyrDriver: "plyrDriver", plyrType: "plyrType", plyrTitle: "plyrTitle", plyrPoster: "plyrPoster", plyrSources: "plyrSources", plyrTracks: "plyrTracks", plyrOptions: "plyrOptions", plyrCrossOrigin: "plyrCrossOrigin", plyrPlaysInline: "plyrPlaysInline" }, outputs: { plyrInit: "plyrInit", plyrProgress: "plyrProgress", plyrPlaying: "plyrPlaying", plyrPlay: "plyrPlay", plyrPause: "plyrPause", plyrTimeUpdate: "plyrTimeUpdate", plyrVolumeChange: "plyrVolumeChange", plyrSeeking: "plyrSeeking", plyrSeeked: "plyrSeeked", plyrRateChange: "plyrRateChange", plyrEnded: "plyrEnded", plyrEnterFullScreen: "plyrEnterFullScreen", plyrExitFullScreen: "plyrExitFullScreen", plyrCaptionsEnabled: "plyrCaptionsEnabled", plyrCaptionsDisabled: "plyrCaptionsDisabled", plyrLanguageChange: "plyrLanguageChange", plyrControlsHidden: "plyrControlsHidden", plyrControlsShown: "plyrControlsShown", plyrReady: "plyrReady", plyrLoadStart: "plyrLoadStart", plyrLoadedData: "plyrLoadedData", plyrLoadedMetadata: "plyrLoadedMetadata", plyrQualityChange: "plyrQualityChange", plyrCanPlay: "plyrCanPlay", plyrCanPlayThrough: "plyrCanPlayThrough", plyrStalled: "plyrStalled", plyrWaiting: "plyrWaiting", plyrEmptied: "plyrEmptied", plyrCueChange: "plyrCueChange", plyrError: "plyrError", plyrStateChange: "plyrStateChange" }, exportAs: ["plyr"], features: [i0.ɵɵNgOnChangesFeature], decls: 0, vars: 0, template: function PlyrComponent_Template(rf, ctx) { } }); }
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.2.4", ngImport: i0, type: PlyrComponent, decorators: [{
-            type: Component,
-            args: [{ selector: 'plyr, [plyr]', exportAs: 'plyr', template: "" }]
-        }], ctorParameters: () => [{ type: i0.ElementRef }, { type: i0.NgZone }, { type: i0.Renderer2 }], propDecorators: { plyrDriver: [{
-                type: Input
-            }], plyrType: [{
-                type: Input
-            }], plyrTitle: [{
-                type: Input
-            }], plyrPoster: [{
-                type: Input
-            }], plyrSources: [{
-                type: Input
-            }], plyrTracks: [{
-                type: Input
-            }], plyrOptions: [{
-                type: Input
-            }], plyrCrossOrigin: [{
-                type: Input
-            }], plyrPlaysInline: [{
-                type: Input
-            }], vr: [{
-                type: ViewChild,
-                args: ['v']
-            }], plyrInit: [{
-                type: Output
-            }], plyrProgress: [{
-                type: Output
-            }], plyrPlaying: [{
-                type: Output
-            }], plyrPlay: [{
-                type: Output
-            }], plyrPause: [{
-                type: Output
-            }], plyrTimeUpdate: [{
-                type: Output
-            }], plyrVolumeChange: [{
-                type: Output
-            }], plyrSeeking: [{
-                type: Output
-            }], plyrSeeked: [{
-                type: Output
-            }], plyrRateChange: [{
-                type: Output
-            }], plyrEnded: [{
-                type: Output
-            }], plyrEnterFullScreen: [{
-                type: Output
-            }], plyrExitFullScreen: [{
-                type: Output
-            }], plyrCaptionsEnabled: [{
-                type: Output
-            }], plyrCaptionsDisabled: [{
-                type: Output
-            }], plyrLanguageChange: [{
-                type: Output
-            }], plyrControlsHidden: [{
-                type: Output
-            }], plyrControlsShown: [{
-                type: Output
-            }], plyrReady: [{
-                type: Output
-            }], plyrLoadStart: [{
-                type: Output
-            }], plyrLoadedData: [{
-                type: Output
-            }], plyrLoadedMetadata: [{
-                type: Output
-            }], plyrQualityChange: [{
-                type: Output
-            }], plyrCanPlay: [{
-                type: Output
-            }], plyrCanPlayThrough: [{
-                type: Output
-            }], plyrStalled: [{
-                type: Output
-            }], plyrWaiting: [{
-                type: Output
-            }], plyrEmptied: [{
-                type: Output
-            }], plyrCueChange: [{
-                type: Output
-            }], plyrError: [{
-                type: Output
-            }], plyrStateChange: [{
-                type: Output
-            }] } });
+(() => { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(PlyrComponent, [{
+        type: Component,
+        args: [{ selector: 'plyr, [plyr]', exportAs: 'plyr', template: "" }]
+    }], () => [{ type: i0.ElementRef }, { type: i0.NgZone }, { type: i0.Renderer2 }], { plyrDriver: [{
+            type: Input
+        }], plyrType: [{
+            type: Input
+        }], plyrTitle: [{
+            type: Input
+        }], plyrPoster: [{
+            type: Input
+        }], plyrSources: [{
+            type: Input
+        }], plyrTracks: [{
+            type: Input
+        }], plyrOptions: [{
+            type: Input
+        }], plyrCrossOrigin: [{
+            type: Input
+        }], plyrPlaysInline: [{
+            type: Input
+        }], vr: [{
+            type: ViewChild,
+            args: ['v']
+        }], plyrInit: [{
+            type: Output
+        }], plyrProgress: [{
+            type: Output
+        }], plyrPlaying: [{
+            type: Output
+        }], plyrPlay: [{
+            type: Output
+        }], plyrPause: [{
+            type: Output
+        }], plyrTimeUpdate: [{
+            type: Output
+        }], plyrVolumeChange: [{
+            type: Output
+        }], plyrSeeking: [{
+            type: Output
+        }], plyrSeeked: [{
+            type: Output
+        }], plyrRateChange: [{
+            type: Output
+        }], plyrEnded: [{
+            type: Output
+        }], plyrEnterFullScreen: [{
+            type: Output
+        }], plyrExitFullScreen: [{
+            type: Output
+        }], plyrCaptionsEnabled: [{
+            type: Output
+        }], plyrCaptionsDisabled: [{
+            type: Output
+        }], plyrLanguageChange: [{
+            type: Output
+        }], plyrControlsHidden: [{
+            type: Output
+        }], plyrControlsShown: [{
+            type: Output
+        }], plyrReady: [{
+            type: Output
+        }], plyrLoadStart: [{
+            type: Output
+        }], plyrLoadedData: [{
+            type: Output
+        }], plyrLoadedMetadata: [{
+            type: Output
+        }], plyrQualityChange: [{
+            type: Output
+        }], plyrCanPlay: [{
+            type: Output
+        }], plyrCanPlayThrough: [{
+            type: Output
+        }], plyrStalled: [{
+            type: Output
+        }], plyrWaiting: [{
+            type: Output
+        }], plyrEmptied: [{
+            type: Output
+        }], plyrCueChange: [{
+            type: Output
+        }], plyrError: [{
+            type: Output
+        }], plyrStateChange: [{
+            type: Output
+        }] }); })();
+(() => { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassDebugInfo(PlyrComponent, { className: "PlyrComponent" }); })();
 
 class PlyrModule {
-    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.2.4", ngImport: i0, type: PlyrModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule }); }
-    static { this.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "17.2.4", ngImport: i0, type: PlyrModule, declarations: [PlyrComponent], exports: [PlyrComponent] }); }
-    static { this.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "17.2.4", ngImport: i0, type: PlyrModule }); }
+    static { this.ɵfac = function PlyrModule_Factory(t) { return new (t || PlyrModule)(); }; }
+    static { this.ɵmod = /*@__PURE__*/ i0.ɵɵdefineNgModule({ type: PlyrModule }); }
+    static { this.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({}); }
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.2.4", ngImport: i0, type: PlyrModule, decorators: [{
-            type: NgModule,
-            args: [{
-                    declarations: [
-                        PlyrComponent,
-                    ],
-                    exports: [
-                        PlyrComponent,
-                    ]
-                }]
-        }] });
+(() => { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(PlyrModule, [{
+        type: NgModule,
+        args: [{
+                declarations: [
+                    PlyrComponent,
+                ],
+                exports: [
+                    PlyrComponent,
+                ]
+            }]
+    }], null, null); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(PlyrModule, { declarations: [PlyrComponent], exports: [PlyrComponent] }); })();
 
 /**
  * Generated bundle index. Do not edit.

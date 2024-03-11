@@ -16,9 +16,9 @@
     "url": "https://github.com/smnbbrv/ngx-plyr"
   },
   "peerDependencies": {
-    "@angular/common": ">=8.0.0",
-    "@angular/core": ">=8.0.0",
-    "plyr": "^3.5.10"
+    "@angular/common": "17.2.4",
+    "@angular/core": "17.2.4",
+    "plyr": "^3.7.8"
   },
   "publishConfig": {
     "access": "public"
@@ -39,5 +39,8 @@
       "default": "./fesm2022/ngx-plyr.mjs"
     }
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+  }
 }

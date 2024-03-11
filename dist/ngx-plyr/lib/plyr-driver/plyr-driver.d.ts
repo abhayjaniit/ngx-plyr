@@ -16,3 +16,4 @@ export interface PlyrDriver {
     updateSource(params: PlyrDriverUpdateSourceParams): void;
     destroy(params: PlyrDriverDestroyParams): void;
 }
+//# sourceMappingURL=plyr-driver.d.ts.map

@@ -3,5 +3,4 @@
  */
 /// <amd-module name="ngx-plyr" />
 export * from './public_api';
-
-declare module 'ngx-plyr';
+//# sourceMappingURL=ngx-plyr.d.ts.map
