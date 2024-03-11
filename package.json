@@ -16,17 +16,17 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^15.2.10",
-    "@angular/cdk": "^15.2.9",
-    "@angular/common": "^15.2.10",
-    "@angular/compiler": "^15.2.10",
-    "@angular/core": "^15.2.10",
+    "@angular/animations": "^17.2.4",
+    "@angular/cdk": "^16.2.14",
+    "@angular/common": "^17.2.4",
+    "@angular/compiler": "^17.2.4",
+    "@angular/core": "^17.2.4",
     "@angular/flex-layout": "^9.0.0-beta.29",
-    "@angular/forms": "^15.2.10",
+    "@angular/forms": "^17.2.4",
     "@angular/material": "^15.2.9",
-    "@angular/platform-browser": "^15.2.10",
-    "@angular/platform-browser-dynamic": "^15.2.10",
-    "@angular/router": "^15.2.10",
+    "@angular/platform-browser": "^17.2.4",
+    "@angular/platform-browser-dynamic": "^17.2.4",
+    "@angular/router": "^17.2.4",
     "@types/hls.js": "^1.0.0",
     "core-js": "^3.36.0",
     "dashjs": "^4.7.4",
@@ -34,13 +34,13 @@
     "plyr": "^3.7.8",
     "rxjs": "^7.8.1",
     "tslib": "^2.0.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.14.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.2.10",
     "@angular/cli": "^15.2.10",
-    "@angular/compiler-cli": "^15.2.10",
-    "@angular/language-service": "^15.2.10",
+    "@angular/compiler-cli": "^17.2.4",
+    "@angular/language-service": "^17.2.4",
     "@semantic-release/changelog": "^3.0.4",
     "@semantic-release/git": "^7.0.16",
     "@types/jasmine": "~3.6.0",
@@ -59,6 +59,6 @@
     "semantic-release": "^15.13.18",
     "ts-node": "~7.0.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.9.5"
+    "typescript": "~5.3.3"
   }
 }
